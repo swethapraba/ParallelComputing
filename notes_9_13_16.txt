@@ -1,0 +1,27 @@
+/*
+Decode:
+Int num = 28, j;
+Char tree[10101] ; /*next time we will see how to build real treenodes; make the array huge */
+
+for(j = 0; j < 10101; j++)
+{
+	tree[j]  = ‘\0’; //some empty variable so you know it’s empty
+}
+
+Loop (28) //loop over num; this builds the tree
+Tree[k] = symbol;
+
+Based on:
+Root = 1
+K -> 2k or -> 2k+1
+
+----------------------------- ^^^ all of this is overhead and stuff below to decode is the actual program
+Next Loop: //loop over the num 28 again, this is the running and actually decoding
+Root = 1
+	K -> 2k or -> 2k+1
+printf(“%c” , tree[j]); //printing out symbols when you actually find them
+
+//%c is formatting for display in the console, to show the content as a character
+/*s is string, f is floating point (normal) , e is scientific notation, etc. */
+
+*/
