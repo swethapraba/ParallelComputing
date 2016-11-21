@@ -1,0 +1,37 @@
+﻿--------------------------------------------------
+
+Testing Hill Codes
+
+'Don't Mine at Night!' encodes as 'RFOE F!EMGZQ FBRMDTO'
+  
+using encryption matrix
+
+⎡4   19⎤
+⎢      
+⎥
+⎣13  10⎦
+
+And RFOE F!EMGZQ FBRMDTO decrypts to DON'T MINE AT NIGHT!
+'
+--------------------------------------------------
+
+Cracking a code using crib text
+
+ciphertext !NITFOITTFW!ITFULBAY is USE THE FORCE LUKE!X
+
+--------------------------------------------------
+
+New messages
+
+'Isabelle is weird!' encodes as ' 'IXBQDNGEV'DVUEFH'
+ 
+using encryption matrix
+
+⎡0  8 ⎤
+⎢
+⎥
+⎣6  23⎦
+
+And  'IXBQDNGEV'DVUEFH decrypts to ISABELLE IS WEIRD!
+
+--------------------------------------------------
