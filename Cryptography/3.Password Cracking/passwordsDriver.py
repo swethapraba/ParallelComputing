@@ -18,6 +18,8 @@ for line in in.readlines():
       line = line.strip()
       (w1,w2,w3) = line.split()
 in.close()
+For this (improved?) version of the problem, there is a new password file to decrypt. This time you know that 3 people have 
+selected passwords from the common list, and that you only need to worry about passwords on the common list of length > 5.
 """
 from MatrixCiphers import *
 from Cryptoalpha import *
