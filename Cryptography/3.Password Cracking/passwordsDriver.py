@@ -21,5 +21,35 @@ in.close()
 For this (improved?) version of the problem, there is a new password file to decrypt. This time you know that 3 people have 
 selected passwords from the common list, and that you only need to worry about passwords on the common list of length > 5.
 """
+from sympy import *
 from MatrixCiphers import *
 from Cryptoalpha import *
+###""""new password hacking things"""
+infile = open("passwords-v2.txt","r") #file open
+for line in infile.readlines():
+	###for loop going through the text file line by line
+	line = line.strip() #get rid of the "\n"
+	print(line) #print the line out
+	#(w1,w2) = line.split()
+	#print(w1 + "          " + w2)
+infile.close() #file close
+
+####The old lab (test to make sure you didn't break everything again)"""
+print("-"*50)
+print("Testing Hill Codes")
+code1 = Cryptoalpha("ABCDEFGHIJKLMNOPQRSTUVWXYZ!' ")
+plaintext = "Don't Mine at Night!"
+E = Matrix([[4,19],[13,10]])
+ciphertext = encrypt(E, plaintext, code1)
+print("'%s' encodes as '%s'" % (plaintext, ciphertext))
+print("  using encryption matrix")
+pprint(E)
+print("And %s decrypts to %s" % (ciphertext, decrypt(E.inv_mod(code1.m),
+                                                     ciphertext, code1)))
+
+print("-"*50)
+print("Cracking a code using crib text")
+ciphertext = "!NITFOITTFW!ITFULBAY"
+answer = decrypt(get_decryption_matrix("ESAT", "EIZS", code1),
+                 ciphertext, code1)
+print("ciphertext %s is %s" % (ciphertext, answer))
