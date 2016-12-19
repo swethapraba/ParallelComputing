@@ -60,62 +60,46 @@ def mod_inverse(a,m):
 			x = i
 			break
 	return x  
+
+print(mod_inverse(6,9))
+
 #problemset1
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#test the encode function:
-decrypted1 = "I KNOW' WHO.!?, PUT THE PUMPKIN ON THE CLOCK TOIQD"
-cd1 = 21
-dd1 = 8
-print(affine_encode(decrypted1, cd1, dd1))
+# alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# #test the encode function:
+# decrypted1 = "I KNOW' WHO.!?, PUT THE PUMPKIN ON THE CLOCK TOIQD"
+# cd1 = 21
+# dd1 = 8
+# print(affine_encode(decrypted1, cd1, dd1))
 
-#decryptions:
-encrypted1 = "UKVQCCZQLMRRZOLMALKUVQVRZOYFQYKRQUGT"
-c1 = 5
-d1 = -14
-print(affine_decode(encrypted1, c1, d1))
-encrypted2 = "lqpfzfaifstqufqqjjtakfnvfqnjisvkk"
-c2 = -3
-d2 = 15
-print(affine_decode(encrypted2, c2, d2))
-encrypted3 = "qgxetvepjyleexlkxujyxlksfbrqboxk"
-c3 = 9
-d3 = -21
-print(affine_decode(encrypted3, c3, d3))
-encrypted4 = "cpvvkmtsbkmtkgqlcbsepsbueqlvzcll"
-c4 = 7
-d4 = -14
-print(affine_decode(encrypted4, c4, d4))
-encrypted5 = "axhugoabuzabrloeusbxalxfubudxorhag"
-c5 = 5
-d5 = -18
-print(affine_decode(encrypted5, c5, d5))
-encrypted6 = "lqqlshykibymgsnfskvqlkmdmbmpoxqfma"
-c6 = 21
-d6 = -10
-print(affine_decode(encrypted6, c6, d6))
-encrypted7 = "mxfpyxmxyfyyxqykliimxeymfpkrryxyb" #the one letter crib
-c7 = 17 #?????
-d7 = -14 #????
-print(affine_decode(encrypted7, c7, d7))
-
-#test practice
-print("TEST PRACTICE")
-newalpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-encryptMeString = "TABLE"
-theAValue = 15
-theBValue = 11
-print(affine_encode(encryptMeString,theAValue,theBValue)) #encoded to KLAUT
-print()
-newalpha2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-decryptMeString = "XMRPQ"
-theAValueE = 3
-theBValueE = -9
-#find C Value
-theCValue = 0
-#find D value
-theDValue = 0
-#use those in the method
-print(affine_decode(decryptMeString,theCValue,theDValue))
+# #decryptions:
+# encrypted1 = "UKVQCCZQLMRRZOLMALKUVQVRZOYFQYKRQUGT"
+# c1 = 5
+# d1 = -14
+# print(affine_decode(encrypted1, c1, d1))
+# encrypted2 = "lqpfzfaifstqufqqjjtakfnvfqnjisvkk"
+# c2 = -3
+# d2 = 15
+# print(affine_decode(encrypted2, c2, d2))
+# encrypted3 = "qgxetvepjyleexlkxujyxlksfbrqboxk"
+# c3 = 9
+# d3 = -21
+# print(affine_decode(encrypted3, c3, d3))
+# encrypted4 = "cpvvkmtsbkmtkgqlcbsepsbueqlvzcll"
+# c4 = 7
+# d4 = -14
+# print(affine_decode(encrypted4, c4, d4))
+# encrypted5 = "axhugoabuzabrloeusbxalxfubudxorhag"
+# c5 = 5
+# d5 = -18
+# print(affine_decode(encrypted5, c5, d5))
+# encrypted6 = "lqqlshykibymgsnfskvqlkmdmbmpoxqfma"
+# c6 = 21
+# d6 = -10
+# print(affine_decode(encrypted6, c6, d6))
+# encrypted7 = "mxfpyxmxyfyyxqykliimxeymfpkrryxyb" #the one letter crib
+# c7 = 17 #?????
+# d7 = -14 #????
+# print(affine_decode(encrypted7, c7, d7))
 
 #avals
 # for a in range(1,26):

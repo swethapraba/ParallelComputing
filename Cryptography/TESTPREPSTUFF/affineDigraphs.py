@@ -116,6 +116,21 @@ c = 541
 d = -2
 decrypted = affine_decode_digraph(ciphered,c,d)
 print(decrypted)
+
+print()
+print()
+myMessage = "baby"
+myA = 117
+myB = -35
+print(affine_encode_digraph(myMessage,myA,myB))
+print()
+theMessage = "MQQO"
+theA = 31 # mod 5...
+theB = 29 # mod 3...
+
+theC = 21
+theD = -11
+print(affine_decode_digraph(theMessage,theC,theD))
 #encodeMe = "On November 15th I will be 17"
 #encodeMe = "my name is Swetha"
 #cipher = affine_encode(encodeMe,a,b)
