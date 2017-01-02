@@ -32,7 +32,7 @@ class Cryptoalpha:
 
     def pad_s(self, s, padchar="X"):
         """ Add padchar (default 'X') to s if length of s is odd"""
-        if (len(s) % 2) == 1:
+        if (len(s) % 2) == 1: #if(s.len % 2) == 1:######
             s += padchar
         return s
 
@@ -49,39 +49,30 @@ class Cryptoalpha:
 
     def MtoS(self, M):
         """ Turn a 2 x C matrix of numbers into a string S, where len(S) = C*2 """
-        string = ""
         lists = []
-        index = 0
-        col = 0
-        maxcol = M[0].length
+        shaped = M.shape #(row, col): (tuple with 2 values)
+        maxcol = shaped[1]
         #get to a list of numbers
-        for c in maxcol:
-            lists[index] = M[0,c]
-            index += 1
-            lists[index] = M[1,c]
-            index += 1
-        #numbers list becomes a string of LETTERS
-        string = self.atos(lists)
-        return string
-        #make the list of numbers into a string of numbers
-        #string = ""
-        #print "MtoS:  "
-        #for n in lists:
-        #    string+=n
-        #    print n
-        #return string
+        for c in range(maxcol): # 0 value to whatever max col value - 1
+            lists.append(M[0,c])
+            lists.append(M[1,c])
+        #numbers list becomes a string
+        stringNum = ""
+        for i in range(len(lists)):
+            tempstr = lists[i]
+            stringNum+= (str)(tempstr)
+        stringLet = self.atos(lists)
+        return stringLet
 
     def stoa(self, s):
         list = []
-        index = 0
         ###padding the string with an extra char at the end if necessary
         string = s
         self.pad_s(string, "X")
         ###Turn a string s into an (even-length) list of numbers, using getIndex()
         for letter in string:
             temp = self.getIndex(letter)
-            list[index] = temp
-            index+=1
+            list.append(temp)
         return list
 
     def atos(self, a):
