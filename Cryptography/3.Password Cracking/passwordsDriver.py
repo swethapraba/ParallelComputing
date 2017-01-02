@@ -99,35 +99,33 @@ for line in passwordFile.readlines():
  						encryptionMatrix = testMatrix
 
  						#cool now we should decrypt another random person's stuff for fun
- 						
-
-	# 			decryptedText = decrypt(testMatrix,tempP,crackAlpha) #here's the decrypted password
-	# 			#print(decryptedText)
-	# 			#print("haha")
-	# 			###########
-	# 			#sillyUser = userid 
-	# 			#sillyPassword = sillyDecrypted
-	# 			#hackedUser = tempU #yay we're just about done
-	# 			#hackedPassword = decryptedText
-	# 			#encryptionMatrix = testMatrix
-	# 			#print("boo")
-	# 			checking = dictionary.check(decryptedText) #is this password a real English word
-	# 			#print("Ladeedaa")
-	# 			if checking is True:#true: #if our test password is real
-	# 				sillyUser = userid 
-	# 				sillyPassword = sillyDecrypted
-	# 				hackedUser = tempU #yay we're just about done
-	# 				hackedPassword = decryptedText
-	# 				encryptionMatrix = testMatrix
-	# 				print("this test works")
-	# 				break
-	# 		#else:
-	# 			#do nothing, just go to the next password in the commonPass file
-	# 			#print()
-	# #else:
-	# 	#do nothing, go to next user in the file
-	# 	#print()
-	# print()
+ 						decryptedText = decrypt(testMatrix,tempP,crackAlpha) #here's the decrypted passwor
+ 						#print(decryptedText)
+ 						#print("haha")
+ 						#sillyUser = userid
+ 						#sillyPassword = sillyDecrypted
+ 						#hackedUser = tempU #yay we're just about done
+ 						#hackedPassword = decryptedText
+ 						#encryptionMatrix = testMatrix
+ 						#print("boo")
+ 						checking = dictionary.check(decryptedText) #is this password a real English word
+ 						#print("Ladeedaa")
+ 						if checking is True:
+ 							sillyUser = userid 
+ 							sillyPassword = sillyDecrypted
+ 							hackedUser = tempU #yay we're just about done
+ 							hackedPassword = decryptedText
+ 							encryptionMatrix = testMatrix
+ 							break
+ 						#true: #if our test password is real
+					
+			#else:
+				#do nothing, just go to the next password in the commonPass file
+				#print()
+	#else:
+		#do nothing, go to next user in the file
+		#print()
+	print()
 
 passwordFile.close() #file close
 commonFile.close()

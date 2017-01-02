@@ -24,19 +24,19 @@ def get_decryption_matrix(P,C,a):
     ciphermatrixnums = Matrix([[cdioneN[0],cditwoN[0]],[cdioneN[1],cditwoN[1]]])#ciphertext number matrix C
     #print("ciphermatrix: ")
     #pprint(ciphermatrixnums)
-    #find inverse of the cipher matrix
-    cipherinverse = ciphermatrixnums.inv_mod(len(a.alphabet))
-    #print("CipherInv: ")
-    #pprint(cipherinverse)
-    d = plainmatrixnums*cipherinverse #multiply plain with the cipher inverse to get d
-    #print("D")
-    #pprint(d)
-    dModed = Matrix([
-        [(d[0,0]%len(a.alphabet)), (d[0,1]%len(a.alphabet))],
-        [(d[1,0]%len(a.alphabet)), (d[1,1]%len(a.alphabet))]
-    ])
-    #pprint(dModed)
-    return dModed
+    #check that matrix is invertible by making sure determinant is one
+    dete = gcd(det(ciphermatrixnums),len(a.alphabet)) #this must be last line; if the gcd is not 1 then you don't have an invertible matrix
+    if(dete == 1):
+        #find inverse of the cipher matrix
+        cipherinverse = ciphermatrixnums.inv_mod(len(a.alphabet))
+        #print("CipherInv: ")
+        #pprint(cipherinverse)
+        d = plainmatrixnums*cipherinverse #multiply plain with the cipher inverse to get d
+        #print("D")
+        #pprint(d)
+        dModed = Matrix([[(d[0,0]%len(a.alphabet)), (d[0,1]%len(a.alphabet))],[(d[1,0]%len(a.alphabet)), (d[1,1]%len(a.alphabet))]])
+        #pprint(dModed)
+        return dModed
     ###########
     #ROUND ONE IGNORE THIS CODE
     #make the matrix for each of these digraph things
