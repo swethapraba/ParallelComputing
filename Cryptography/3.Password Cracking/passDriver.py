@@ -98,7 +98,7 @@ for users in allUsersList:
  					if determinant == 1:
  						#print(determinant)  #gcd is 1 = invertible matrix
  						decryptedPassword = decrypt(testMatrix, thisUserPassword, alphabet) #decrypt the password with the matrix
- 						if decryptedPassword == commonPass: #if the full decrypted password matches the common password
+ 						if decryptedPassword[:6] == commonPass: #if the full decrypted password matches the common password
  							#yay we have the right matrix
  							decryptionMatrix = testMatrix #save the matrix
  							sillyUser = users #save the username
@@ -112,6 +112,7 @@ for users in allUsersList:
  							print(sillyPassword)
  							break #??? should this be good?
  		index += 1 #go to the next ones
+print("Yay we're at the end of the file")
 pprint(decryptionMatrix) #print stuff out
 print(sillyUser)
 print(sillyEncryptedPassword)

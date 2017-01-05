@@ -1,0 +1,151 @@
+Last login: Tue Jan  3 08:43:44 on console
+Swethas-MacBook-Pro:~ Swetha$ cd Documents/
+Swethas-MacBook-Pro:Documents Swetha$ 
+Swethas-MacBook-Pro:Documents Swetha$ cd SeniorYearCSElectives/
+Swethas-MacBook-Pro:SeniorYearCSElectives Swetha$ cd Cryptography/
+Swethas-MacBook-Pro:Cryptography Swetha$ cd 3.Password\ Cracking/
+Swethas-MacBook-Pro:3.Password Cracking Swetha$ python3 passDriver.py 
+Here is one person's information:
+⎡33  4 ⎤
+⎢      ⎥
+⎣59  35⎦
+2018amallepa
+C]R-)]<C
+54321+TG
+Here is one person's information:
+⎡15  55⎤
+⎢      ⎥
+⎣50  5 ⎦
+2018azaman
+</J)W!D$
+1231214Z
+Here is one person's information:
+⎡31  18⎤
+⎢      ⎥
+⎣43  51⎦
+2018bsharrer
+44N0BH:6ZN
+12312VX,0R
+Here is one person's information:
+⎡2   28⎤
+⎢      ⎥
+⎣13  10⎦
+2018bzhu
+?K+.;/(@]6
+12312T=DF/
+Here is one person's information:
+⎡38  11⎤
+⎢      ⎥
+⎣40  10⎦
+2018dbloy
+C'%+V(#N9>
+12312X7K,?
+Here is one person's information:
+⎡55  47⎤
+⎢      ⎥
+⎣49  3 ⎦
+2018gsayed
+W4N80EJ8
+54321SK%
+Here is one person's information:
+⎡53  55⎤
+⎢      ⎥
+⎣44  0 ⎦
+2018hkim
+9O]H8Q4T
+54321E?L
+Here is one person's information:
+⎡14  29⎤
+⎢      ⎥
+⎣1   60⎦
+2018jkim4
+*V;(1/ESDP
+12345##P8R
+Here is one person's information:
+⎡2  12⎤
+⎢     ⎥
+⎣4  36⎦
+2018jmclaugh
+O/Q9/IB925
+12345AR5?Y
+Here is one person's information:
+⎡12  47⎤
+⎢      ⎥
+⎣55  41⎦
+2018kschinel
+?K6)0XHZ8M
+12345?E>;4
+Here is one person's information:
+⎡47  55⎤
+⎢      ⎥
+⎣22  17⎦
+2018mcasebee
+@P,-7PP+
+12345#/N
+Here is one person's information:
+⎡10  6 ⎤
+⎢      ⎥
+⎣8   49⎦
+2018mwroblew
+20H]VFU+
+12345J@U
+Here is one person's information:
+⎡27  56⎤
+⎢      ⎥
+⎣3   38⎦
+2018rkammari
+EZ<)I>C%KO
+12345#M+SM
+Here is one person's information:
+⎡41  39⎤
+⎢      ⎥
+⎣14  22⎦
+2018rma
+9&NP,2\21-
+54321IAJ;!
+Here is one person's information:
+⎡38  47⎤
+⎢      ⎥
+⎣39  22⎦
+2018smckee
+H;:83H+4LK
+54321DV0*H
+Here is one person's information:
+⎡27  12⎤
+⎢      ⎥
+⎣26  46⎦
+2018stermart
+(,I$<(9'H8
+12345QROQ\
+Here is one person's information:
+⎡43  38⎤
+⎢      ⎥
+⎣26  21⎦
+2018swadehra
+3:XR]N,+
+12345%])
+Here is one person's information:
+⎡11  17⎤
+⎢      ⎥
+⎣51  7 ⎦
+2018than
+#/V29(J=
+12312V-?
+Here is one person's information:
+⎡17  52⎤
+⎢      ⎥
+⎣10  0 ⎦
+2018zmyers
+)I5>X/U[
+54321"ZA
+Yay we're at the end of the file
+⎡17  52⎤
+⎢      ⎥
+⎣10  0 ⎦
+2018zmyers
+)I5>X/U[
+54321"ZA
+The other User: 2018lbinder
+Their encrypted password: S][2*5/*
+Their decrypted password: &-I@C>D3
+Swethas-MacBook-Pro:3.Password Cracking Swetha$ 
