@@ -33,9 +33,10 @@ def rsa_crack(C,e,m):
 	return rsa_decrypt(C, decryptionKey, m)
 
 def power_mod(a,b,m):
-	x = (a%m)**(b%m) #mod each before power it also works
-	return x % m
-
+	#x = (a%m)**(b%m) #mod each before power it also works
+	#return x % m
+	
+	return pow(a,b,m)
 def string_to_int(s):
 	#returns an integer from the ASCII encoding of s
 	return int.from_bytes(s.encode(),'big')
@@ -56,13 +57,13 @@ def find_prime(k,l):
 		#print(num)
 		return num
 
-def mod_inverse(a,m):
-	x = 1
-	for i in range(0,m-1):
-		if (a*i) % m == 1:
-			x = i
-			break
-	return x  
+def mod_inverse(b, n):
+	""" Return the modular inverse of b mod n
+	 or None if gcd(b,n) > 1 """
+	g, x, _ = xgcd(b, n)
+	if g == 1:
+		return x % n
+
 
 modulus = (17*19)
 encryptionKey = 23
@@ -77,5 +78,3 @@ string2 = rsa_decrypt(string1, d, modulus)
 print(string2)
 decryptMe = rsa_crack(string1, encryptionKey, modulus)
 print(decryptMe)
-
-
