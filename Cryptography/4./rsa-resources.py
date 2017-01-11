@@ -27,7 +27,7 @@ def inv_mod(b, n):
 ##############
 #save the following as rsa-shell.py
 
-from #(name of your rsa file)# import *
+from isabelleRSA.py import *
 
 def unit_test1(kv, lv, dv, textv):
 	(p1, p2) = choose_modulus(kv, lv, dv)

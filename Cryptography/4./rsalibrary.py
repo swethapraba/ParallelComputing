@@ -3,13 +3,10 @@ from sympy import *
 from sympy.ntheory import isprime
 import random
 def choose_modulus(k,l,m):
-	p1 = find_prime(2**k,2**l)
-	p2 = find_prime(2**k,2**l)
-	while not(log(p1,2) + m < log(p2,2)):
-		p1 = find_prime(2**k,2**l)
-		p2 = find_prime(2**k,2**l)
-	print(p1*p2)
-	return p1*p2
+	p1 = find_prime(k,l)
+	p2 = find_prime(k,l)
+	print(log(p1,2)+m < log(p2,2))
+	return p1,p2
 def choose_encryption_key(m):
 	e = random.randrange(1,m);
 	while not(gcd(e,totient(m)) == 1):

@@ -9,8 +9,9 @@ def choose_modulus(k,l,m):
 	#	p1 = find_prime(k,l)
 	#	p2 = find_prime(k,l)
 	#	print(p1, p2)
-	print(p1, p2)
-	print(log(p1,2)+m < log(p2,2))
+	#print(log(p1,2)+m < log(p2,2))
+	print("prime 1: ", p1)
+	print("prime 2: ", p2)
 	return p1,p2
 
 def choose_encryption_key_old(m):
@@ -76,10 +77,49 @@ def xgcd(b, n):
         y0, y1 = y1, y0 - q * y1
     return b, x0, y0
 
-
 def inv_mod(b, n):
     """ Return the modular inverse of b mod n
      or None if gcd(b,n) > 1 """
     g, x, _ = xgcd(b, n)
     if g == 1:
         return x % n
+
+def unit_test1(kv, lv, dv, textv):
+	(p1, p2) = choose_modulus(kv, lv, dv)
+	m = p1 * p2
+	e = choose_encryption_key(p1, p2)
+	d = compute_decryption_key(e, p1, p2)
+	plaintext = textv
+	P = string_to_int(plaintext)
+	print("Plaintext in bits = ", P)
+	C = RSA_encrypt(P, e, m)
+	print("Plaintext: ", plaintext)
+	print("Text Len: ", 8*len(plaintext), "bits")
+	print("Modulus len: ",  int(log(m)/log(2)), "bits")
+	print("Ciphertext in bit format = ", C)
+	D = RSA_decrypt(C, d, m)
+	print("D (Decrypted text in bit format) = ", D)
+	decoded_text = int_to_string(D)
+	print("Decoded Text: ", decoded_text, "\n\n--------------\n")
+
+def unit_test2(kv, lv, dv, textv):
+	(p1, p2) = choose_modulus(kv, lv, dv)
+	m = p1 * p2
+	e = choose_encryption_key(p1, p2)
+	d = compute_decryption_key(e, p1, p2)
+	plaintext = textv
+	P = string_to_int(plaintext)
+	print("Plaintext in bits = ", P)
+	C = RSA_encrypt(P, e, m)
+	print("Plaintext: ", plaintext)
+	print("Text Len: ", 8*len(plaintext), "bits")
+	print("Modulus len: ",  int(log(m)/log(2)), "bits")
+	print("C (Ciphertext in bit format) = ", C)
+	D = RSA_crack(C, e, m)
+	print("D (decrypted text in bit format) = ", D)
+	decoded_text = int_to_string(D)
+	print("Decoded Text: ", decoded_text, "\n\n--------------\n")
+
+unit_test1(10, 12, 1, "Hi")
+unit_test1(200,201,50,"I've got the best RSA. Tremendous!")
+unit_test2(10, 12, 5, "Hi")
