@@ -120,10 +120,10 @@ def unit_test2(kv, lv, dv, textv):
 	decoded_text = int_to_string(D)
 	print("Decoded Text: ", decoded_text, "\n\n--------------\n")
 
-unit_test1(10, 12, 1, "Hi")
+#unit_test1(10, 12, 1, "Hi")
 #unit_test1(200, 201, 50, "YouUsedTheWrongFormulaButGotTheRightAnswer")
-unit_test1(200,201,50,"I've got the best RSA. Tremendous!")
-unit_test2(10, 12, 5, "Hi")
+#unit_test1(200,201,50,"I've got the best RSA. Tremendous!")
+#unit_test2(10, 12, 5, "Hi")
 
 #################
 """
@@ -146,8 +146,8 @@ print()
 """
 PART 2: SENDING SOMEONE ELSE A MESSAGE WITH THEIR SCHEME
 """
-theirEKey = encryptKey #0
-theirMod = modulus #0
+theirEKey = encryptKey # this is where we add their e!!!!!!!!
+theirMod = modulus #add their m !!!!!!
 ourMessage = "YouUsedTheWrongFormulaButGotTheRightAnswer" #42 chars
 byteMessage = string_to_int(ourMessage) #42 bytes long
 encryptedText = RSA_encrypt(byteMessage, theirEKey, theirMod)
@@ -161,7 +161,7 @@ PART 3: DECODING THE MESSAGE SENT TO US USING OUR SCHEME
 """
 encryption = encryptKey
 mod = modulus
-byteReceived = 7685639402658570041332092386730857722829508721500337074039018855544141530770944219201236076815619964810541252211564571230 #encryptedText 
+byteReceived = encryptedText #7685639402658570041332092386730857722829508721500337074039018855544141530770944219201236076815619964810541252211564571230 #encryptedText 
 #this is posted for us ^^
 #stringReceived = int_to_string(byteReceived) #decrypt it
 decryptKey = compute_decryption_key(encryption, p1, p2)
