@@ -161,12 +161,13 @@ PART 3: DECODING THE MESSAGE SENT TO US USING OUR SCHEME
 """
 encryption = encryptKey
 mod = modulus
-byteReceived = byteMessage #"10101010110" #this is posted for us
+byteReceived = 7685639402658570041332092386730857722829508721500337074039018855544141530770944219201236076815619964810541252211564571230 #encryptedText 
+#this is posted for us ^^
 #stringReceived = int_to_string(byteReceived) #decrypt it
 decryptKey = compute_decryption_key(encryption, p1, p2)
 #print("1 ", decryptKey)
 decryptedBytes = RSA_decrypt(byteReceived, decryptKey, mod)
-print("2 ", decryptedBytes)
+#print("2 ", decryptedBytes)
 decryptedString = int_to_string(decryptedBytes)
-print("3 ", decryptedString)
+#print("3 ", decryptedString)
 print("The Message received : ", decryptedString) #this was the message we got -> post to our blackboard thread
