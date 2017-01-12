@@ -5,13 +5,13 @@ import random
 def choose_modulus(k,l,m):
 	p1 = find_prime(k,l)
 	p2 = find_prime(k,l)
-	#while not (log(p1,2) + m < log(p2, 2)):
-	#	p1 = find_prime(k,l)
-	#	p2 = find_prime(k,l)
-	#	print(p1, p2)
-	#print(log(p1,2)+m < log(p2,2))
-	#print("prime 1: ", p1)
-	#print("prime 2: ", p2)
+	while not (abs(log(p1,2) - log(p2,2)) < m):
+		p1 = find_prime(k,l)
+		p2 = find_prime(k,l)
+		print(p1, p2)
+	print(log(p1,2)+m < log(p2,2))
+	print("prime 1: ", p1)
+	print("prime 2: ", p2)
 	return p1,p2
 
 def choose_encryption_key_old(m):
@@ -161,10 +161,11 @@ print()
 #########
 """
 PART 3: DECODING THE MESSAGE SENT TO US USING OUR SCHEME
-
+"""
 encryption = 9034302786477632084177231467338707794932890382219531012244768011578912282025102742921209071808720002426284716566453084939
 mod = 30189064434495182222794692701630732429757499485911917941672183961436119037704394785112588879375758643631173789514757495643
-
+p1 = 2852799332826165576549683721934686650431760177477582224441789
+p2 = 10582260058434591375044316914661108554362583639774055485540087
 byteReceived = 7685639402658570041332092386730857722829508721500337074039018855544141530770944219201236076815619964810541252211564571230 #encryptedText 
 #this is posted for us ^^
 #stringReceived = int_to_string(byteReceived) #decrypt it
@@ -175,15 +176,12 @@ decryptedBytes = RSA_decrypt(byteReceived, decryptKey, mod)
 decryptedString = int_to_string(decryptedBytes)
 #print("3 ", decryptedString)
 print("The Message received : ", decryptedString) #this was the message we got -> post to our blackboard thread
-"""
-#### trying lizzie's scheme:
+#the message we received: RSA is probably safer than couriers.
+
+#### trying lizzie's scheme: post this on Lizzie's thread for them to decode (For Part 2)
 e = 1274570651282105475941777766587577582023518221190732522597076146804533049158766343138826132941234187595481937482071481202376751312818066989598920155989
 m = 9974085880263379580394176919091237671243630991492368310958180254243729015156794407476067877070352245916181312913506081413978120979798227144179681175879
-
 message = "Hi. This is a creative message."
 byteMess = string_to_int(message)
 encryptedWords = RSA_encrypt(byteMess,e,m)
-print("THe message encrypted is: ", encryptedWords)
-
-
-
+print("The message encrypted is: ", encryptedWords)
