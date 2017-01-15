@@ -8,8 +8,3 @@ def xgcd(b, n):
 		x0, x1 = x1, x0- q * x1
 		y0, y1 = y1, y0 - q * y1
 	return b, x0, y0
-
-
-	#ask deidre about the study party room booking for jan 22 vs jan 21
-	# ask her about the room booking for teen tech week it's not on the calendar??
-	#email myisha that description pleaseeee

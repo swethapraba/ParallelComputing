@@ -103,7 +103,7 @@ for i in range(10,100):
   time2 = time.time()
   differenceOfTimes = time2 - time1
   print("Time: %s        Modulus Size: %s" %(differenceOfTimes, i))
-
+#graph as x, log(y) to make the graph look nicer
 """
 modulus = (17*19)
 encryptionKey = 23
