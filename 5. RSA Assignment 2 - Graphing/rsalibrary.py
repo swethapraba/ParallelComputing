@@ -91,7 +91,7 @@ NEXT PART
 i = 20
 for i in range(10,100):
   #this is for the graphing thingamabob
-  p1,p2 = choose_modulus(i,i+1,i)
+  p1,p2 = choose_modulus(i,i+2,i)
   modulus = p1*p2
   encryptionKey = choose_encryption_key(p1,p2)
   stringMessage = "Hello, it's me"
@@ -118,3 +118,15 @@ print(string2)
 decryptMe = rsa_crack(string1, encryptionKey, modulus)
 print(decryptMe)
 """
+
+'''
+DIGITAL SIGNATURES
+'''
+#ourP1
+#ourP2
+#modulusOur = 
+#ourEncryption = 
+#ourDecryption = compute_decryption_key(ourEncryption, p1, p2)
+#message = "boo"
+#encryptedMessage = RSA_encrypt(message, ourDecryption, modulusOur)
+#doubleEncrypt = RSA_encrypt(encryptedMessage,)
