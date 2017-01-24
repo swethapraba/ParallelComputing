@@ -16,6 +16,13 @@ def methodOne(n):
 			print("%s : YES"%number)
 			number+=1
 	return decision
+def millerRabinPrimality(n,k):
+	prime = "PRIME"
+	composite = "COMPOSITE"
+	decision = prime
+	###write code here
+	return decision
 
-n = 123 #temp
+n = 23 #temp
 print(methodOne(n))
+print(millerRabinPrimality(n,3))
