@@ -85,3 +85,18 @@ def factor(n):
 n = 23 #temp
 print(methodOne(n))
 print(millerRabinPrimality(n,3))
+
+'''
+Write a driver file that generates 1,000 large random numbers (length = 200 bits each) 
+and checks their primality using your Miller Rabin algorithm. 
+Determine the accuracy of your Miller Rabin as a function of k (the number of iterations of your algorithm). 
+Print a table of “k” vs “accuracy rate”
+'''
+for i in range(1000):
+	number = random.randrange(1000000000000000000000000,100000000000000000000000000000000000) #how do you decide this range??
+	k = 1000
+	isPrime = millerRabinPrimality(number, k)#how do you decide how many k??
+	accruacy = 0.0
+	####ok somehow determining accuracy rate
+	print("K: %s        Accuracy Rate: %s" %(k,accuracy))
+
