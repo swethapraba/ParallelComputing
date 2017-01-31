@@ -1,0 +1,10 @@
+Matrix: ([[38, 16], [29,56]])
+
+First User: 2018KGATESMA
+Their Password: LACROSSE!*$x
+
+Second User: 2018EMOAR
+Their Password: MAXIMUS89X
+
+Third User: 2018SBAEK
+Their Password: GENESIS*3X
