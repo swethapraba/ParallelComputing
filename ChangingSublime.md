@@ -1,6 +1,5 @@
 ##Preferences.sublime-settings
 // Settings in here override those in "Default/Preferences.sublime-settings", and
-
 // are overridden in turn by file type specific settings.
 ###
 {
