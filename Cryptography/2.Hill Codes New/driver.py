@@ -1,4 +1,4 @@
-from sympy import *
+ffrom sympy import *
 # import MatrixCiphers
 from MatrixCiphers import *
 from Cryptoalpha import *

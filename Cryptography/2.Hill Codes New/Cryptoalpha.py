@@ -63,7 +63,7 @@ class Cryptoalpha:
             stringNum+= (str)(tempstr)
         stringLet = self.atos(lists)
         return stringLet
-
+n
     def stoa(self, s):
         list = []
         ###padding the string with an extra char at the end if necessary
