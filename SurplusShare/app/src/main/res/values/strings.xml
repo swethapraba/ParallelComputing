@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SurplusShare</string>
+    <string name="title_activity_about_ss">AboutSS</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about_surplus_share">AboutSurplusShare</string>
+    <string name="large_text">
+        "About SurplusShare.\n\n"
+
+        "SurplusShare was created by Swetha Prabakaran during Mobile App Development at TJHSST. \n\n"
+
+        "The different graphics used in the logo were created by the following people:\n"
+
+        "-Oliver Guin from Noun Project.\n "
+
+        "-Icon Island from Noun Project.\n"
+    </string>
+</resources>

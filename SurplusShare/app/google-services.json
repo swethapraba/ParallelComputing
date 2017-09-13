@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "804168108140",
+    "firebase_url": "https://surplusshareloudoun.firebaseio.com",
+    "project_id": "surplusshareloudoun",
+    "storage_bucket": "surplusshareloudoun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804168108140:android:6025afe178b07f67",
+        "android_client_info": {
+          "package_name": "io.github.swethapraba.surplusshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804168108140-t5nvecemp81ieqdh1bq5f4856f0elnt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEzC_8rK1ZTsm2526_p3cpvngrL9qV-VQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
