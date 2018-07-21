@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lab5QuizGameSP</string>
+
+    <string name="instructions"> Name the woman in tech being described.
+        Use their full name e.g. "Megan Smith" not just "Smith"
+    </string>
+    <string name="ada_lovelace">1. I am an English mathematician
+        known for my work on the Analytical Engine (invented by Charles Babbage).
+    </string>
+    <string name="hedy_lamarr">2.I was a  film actress and inventor
+        who helped invent frequency hopping.
+    </string>
+    <string name="grace_hopper">3.I was the Navy Rear Admiral credited with inventing
+       the first compiler and the term debugging.
+    </string>
+    <string name="carol_shaw">4.I am said to be the first female video game designer.
+        I programmed the game River Raid at Activision.
+    </string>
+    <string name="jean_sammet">5.I was an American computer scientist who developed
+        the FORMAC language in 1962
+    </string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

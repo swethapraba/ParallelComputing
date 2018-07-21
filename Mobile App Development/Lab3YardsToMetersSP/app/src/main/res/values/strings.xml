@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YardsToMetersThirdLab</string>
+    <string name="placeholder">Convert Yards to Meters!</string>
+    <string name="ydistance">Yards</string>
+    <string name="convert_me"> Convert Me!</string>
+    <string name="mdistance">Meters</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

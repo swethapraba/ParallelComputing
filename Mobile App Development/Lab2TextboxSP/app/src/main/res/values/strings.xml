@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TextboxSecondLab</string>
+    <string name="question">What is your name?</string>
+    <string name="placeholder">Enter your name!</string>
+    <string name="submit">Submit!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
